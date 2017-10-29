@@ -104,5 +104,5 @@
             'status' => 1),array('id_credit' => $id));
     }
     echo $data;
-    //Ajax Keren
+    //Ajax Keren/Ntabs
 ?>
