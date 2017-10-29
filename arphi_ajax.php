@@ -103,6 +103,6 @@
         $objCtrl->update('credit',array(
             'status' => 1),array('id_credit' => $id));
     }
-    // echo $sql;
     echo $data;
+    //Ajax Keren
 ?>
