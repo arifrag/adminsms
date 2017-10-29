@@ -1,0 +1,70 @@
+<!-- start: page -->
+<section class="panel">
+	<header class="panel-heading">
+		<div class="panel-actions">
+			<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+			<a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+		</div>
+
+		<h2 class="panel-title">Buy Credit</h2>
+	</header>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Type Credit</label>
+					<div class="col-sm-4">
+						<select class="form-control" id="creditType" name="creditType">
+							<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pilih Credit</option>
+							<option value="8ds9">Credit : 1400 | Harga : 100.000</option>
+							<option value="98ds">Credit : 2900 | Harga : 200.000</option>
+							<option value="a86s">Credit : 4200 | Harga : 300.000</option>
+							<option value="a97s">Credit : 5700 | Harga : 400.000</option>
+							<option value="as4">Credit : 10000 | Harga : 700.000</option>
+						</select>
+					</div>	
+				</div>
+				<div class="form-group">
+				<label class="col-sm-2 control-label">Bank</label>
+					<div class="col-sm-4">
+						<div class="checkbox-custom checkbox-primary">
+							<input type="checkbox" id="typeBank">
+							<label for="typeBank">BCA</label>
+						</div>
+						
+					</div>	
+				</div><div class="form-group">
+				<label class="col-sm-2 control-label">Penting</label>
+					<div class="col-sm-6">
+						<blockquote class="info">
+							<p>Invoice akan kami kirim ke alamat email dan no Hp yang telah terdaftar sebelumnya. 3 digit terakhir Ex. <span class="highlight">012</span> pada invoice dibutuhkan untuk kami memverifikasi transfer Anda. Apabila transfer selesai, harap konfirmasi dengan menekan button di bawah.</p>
+							<small>Hubungi <cite title="Magazine X">Admin Support</cite>, jika terdapat keluhan. Terimakasih</small>
+						</blockquote>
+					</div>	
+				</div>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<button type="button" onclick="sentCredit();" class="mb-xs mt-xs mr-xs btn btn-primary"><i class="fa fa-send-o"></i> Sent</button>
+						<button type="button" onclick="reset();" class="mb-xs mt-xs mr-xs btn btn-primary"><i class="fa fa-refresh"></i> Reset</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel-body">
+		<table class="table table-bordered table-striped mb-none" id="datatable-default">
+			<thead>
+				<tr>
+					<th width="10%">Harga</th>
+					<th width="10%">Credit</th>
+					<th width="10%">Date Time</th>
+					<th width="10%">Status</th>
+				</tr>
+			</thead>
+			<tbody id="TableCredit">
+			</tbody>
+		</table>
+	</div>
+</section>
+<!-- end: page -->

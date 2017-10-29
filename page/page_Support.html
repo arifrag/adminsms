@@ -1,0 +1,42 @@
+<div class="row">
+	<div class="col-md-6">
+		<form>
+			<section class="panel">
+				<header class="panel-heading">
+					<div class="panel-actions">
+						<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+						<a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+					</div>
+
+					<h2 class="panel-title">Apa yang anda butuhkan?</h2>
+
+					<p class="panel-subtitle">
+						Masukkan anda sangat berarti bagi kami
+					</p>
+				</header>
+
+					<div class="panel-body">
+						<div class="row form-group">
+							<div class="col-lg-4">
+								<!-- <input type="text" name="firstName" placeholder="First Name" class="form-control"> -->
+								<select class="form-control"  id="type_support">
+									<option value="">-Pilih Type-</option>
+									<option value="1">Keluhan</option>
+									<option value="2">Saran</option>
+									<option value="3">Pertanyaan</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<textarea class="form-control" rows="5" placeholder="Description" id="desc_support"></textarea>
+							</div>
+						</div>
+					</div>
+					<footer class="panel-footer">
+						<button class="btn btn-primary" type="button" onclick="sentSupport();">Sent</button>
+					</footer>
+			</section>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,57 @@
+<!-- start: page -->
+						<section class="panel">
+							<header class="panel-heading">
+								<div class="panel-actions">
+									<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+									<a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+								</div>
+						
+								<h2 class="panel-title">Create a Message</h2>
+							</header>
+							<div class="panel-body">
+								<div class="row">
+									<div class="form-group">
+										<label class="col-sm-1 control-label">Input</label>
+										<div class="col-sm-2">
+											<input class="form-control" id="destination_number" name="destination_number" onblur="cekNo();" value="">
+										</div>
+										<span class="resContactName">To : ...</span>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">Write a Message</label>
+										<div class="col-sm-2">
+											<textarea class="form-control" id="message" name="message"></textarea> 
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-4">
+											<button type="button" onclick="sent();" class="mb-xs mt-xs mr-xs btn btn-primary"><i class="fa fa-send-o"></i> Sent</button>
+											<button type="button" onclick="reset();" class="mb-xs mt-xs mr-xs btn btn-primary"><i class="fa fa-refresh"></i> Reset</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-body">
+								<table class="table table-bordered table-striped mb-none" id="datatable-default">
+									<thead>
+										<tr>
+											<th width="25">Contact Name</th>
+											<th width="10">No HP</th>
+											<th width="50%">Message</th>
+											<th width="10">Sent From</th>
+											<th width="5">Date Time</th>
+										</tr>
+									</thead>
+									<tbody id="TableSent">
+										<tr class="gradeX">
+											<td>ARIF RAGIL</td>
+											<td>089623199126</td>
+											<td>sajkhdasjkhdkjas lasjkdh ksaj dasjlkd alskdh alsj dajs sjdhfsjhd sjdf sljkdhf sjkdf hsjkdf hksjd fjskd fskdjf ksjd fkjsd f sjdfh sjdfh skdjf sjdfh sjldf hsjdf sjld fljsdf hljsd fjsd fjsd fjsd hfljkj sd ksjdh ksj kjsh dkj</td>
+											<td>WEB</td>
+											<td>07:20 20/11/2016</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					<!-- end: page -->

@@ -1,0 +1,142 @@
+<!-- start: page -->
+<section class="panel">
+	<header class="panel-heading">
+		<div class="panel-actions">
+			<a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+			<a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+		</div>
+
+		<h2 class="panel-title">API CODE</h2>
+	</header>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tabs">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#original" data-toggle="tab"><i class="fa fa-pencil-square-o"></i>Original</a>
+						</li>
+						<li>
+							<a href="#broadcast" data-toggle="tab"><i class="fa fa-fighter-jet"></i> Broadcast</a>
+						</li>
+						<li>
+							<a href="#schedule" data-toggle="tab"><i class="fa fa-list-alt"></i>Schedule</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div id="original" class="tab-pane active">
+							<p>PHP CODE</p>
+							<textarea class="form-control" rows="10" id="codemirror_js_code" name="code_js" data-plugin-codemirror data-plugin-options='{ "mode": "text/javascript" }'>
+								$type = 'orgnl9283'; //unchanged
+								$no_hp = 'contact_number1';
+								$message = 'Type your message';
+								$usr_api = 'your_usr_api';
+								$pass_api = 'your_pass_api';
+								$curl = curl_init();
+								curl_setopt_array($curl, array(
+								  CURLOPT_URL => "http://localhost/porto/arphi_json.php",
+								  CURLOPT_RETURNTRANSFER => true,
+								  CURLOPT_ENCODING => "",
+								  CURLOPT_MAXREDIRS => 10,
+								  CURLOPT_TIMEOUT => 30,
+								  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+								  CURLOPT_CUSTOMREQUEST => "POST",
+								  CURLOPT_POSTFIELDS => "type=$type&no_hp=$no_hp&message=$message&usr_api=$usr_api&pass_api=$pass_api",
+								  CURLOPT_HTTPHEADER => array(
+								    "content-type: application/x-www-form-urlencoded",
+								    "f: coba"
+								  ),
+								));
+
+								$response = curl_exec($curl);
+								$error = curl_error($curl);
+
+								curl_close($curl);
+
+								if ($error) {
+								  echo "cURL Error #:" . $error;
+								} else {
+								  echo $response;
+								}
+							</textarea>
+						</div>
+						<div id="broadcast" class="tab-pane">
+							<p>PHP CODE</p>
+							<textarea class="form-control" rows="10" id="codemirror_js_code" name="code_js" data-plugin-codemirror data-plugin-options='{ "mode": "text/javascript" }'>
+								$type = 'brdcst8329'; //unchanged
+								$no_hp = 'contact_number1#contact_number2#contact_number3#contact_number4#contact_number5#contact_number6#contact_number7#contact_number8#contact_number9';
+								$message = 'Type your message';
+								$usr_api = 'your_usr_api';
+								$pass_api = 'your_pass_api';
+								$curl = curl_init();
+								curl_setopt_array($curl, array(
+								  CURLOPT_URL => "http://localhost/porto/arphi_json.php",
+								  CURLOPT_RETURNTRANSFER => true,
+								  CURLOPT_ENCODING => "",
+								  CURLOPT_MAXREDIRS => 10,
+								  CURLOPT_TIMEOUT => 30,
+								  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+								  CURLOPT_CUSTOMREQUEST => "POST",
+								  CURLOPT_POSTFIELDS => "type=$type&no_hp=$no_hp&message=$message&usr_api=$usr_api&pass_api=$pass_api",
+								  CURLOPT_HTTPHEADER => array(
+								    "content-type: application/x-www-form-urlencoded",
+								    "f: coba"
+								  ),
+								));
+
+								$response = curl_exec($curl);
+								$error = curl_error($curl);
+
+								curl_close($curl);
+
+								if ($error) {
+								  echo "cURL Error #:" . $error;
+								} else {
+								  echo $response;
+								}
+							</textarea>
+						</div>
+						<div id="schedule" class="tab-pane">
+							<p>PHP CODE</p>
+							<textarea class="form-control" rows="10" id="codemirror_js_code" name="code_js" data-plugin-codemirror data-plugin-options='{ "mode": "text/javascript" }'>
+								$type = 'schdle4565'; //unchanged
+								$no_hp = 'contact_number1';
+								$message = 'Type your message';
+								$schedule = 'Time Schedule'; //Ex :2016-12-30 10:41:10
+								$usr_api = 'your_usr_api';
+								$pass_api = 'your_pass_api';
+								$curl = curl_init();
+								curl_setopt_array($curl, array(
+								  CURLOPT_URL => "http://localhost/porto/arphi_json.php",
+								  CURLOPT_RETURNTRANSFER => true,
+								  CURLOPT_ENCODING => "",
+								  CURLOPT_MAXREDIRS => 10,
+								  CURLOPT_TIMEOUT => 30,
+								  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+								  CURLOPT_CUSTOMREQUEST => "POST",
+								  CURLOPT_POSTFIELDS => "type=$type&no_hp=$no_hp&message=$message&schedule=$schedule&usr_api=$usr_api&pass_api=$pass_api",
+								  CURLOPT_HTTPHEADER => array(
+								    "content-type: application/x-www-form-urlencoded",
+								    "f: coba"
+								  ),
+								));
+
+								$response = curl_exec($curl);
+								$error = curl_error($curl);
+
+								curl_close($curl);
+
+								if ($error) {
+								  echo "cURL Error #:" . $error;
+								} else {
+								  echo $response;
+								}
+							</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end: page -->
